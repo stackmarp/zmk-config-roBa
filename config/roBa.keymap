@@ -16,30 +16,6 @@
 &sl { release-after-ms = <250>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        BT0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <28>;
-            layers = <0 1 2 3 4 5 6>;
-        };
-
-        BT1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <28 23>;
-        };
-
-        BT2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <28 24>;
-        };
-
-        BT3 {
-            bindings = <&none>;
-            key-positions = <28 25>;
-        };
-    };
 
     macros {
         to_layer_0: to_layer_0 {
