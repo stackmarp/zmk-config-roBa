@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - TAB
+  - {t: TAB, h: LEFT SHIFT}
   - '&parenthesis'
   - N
   - M
@@ -160,7 +160,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - '&mkp MB4'
   - '&mkp LCLK'
