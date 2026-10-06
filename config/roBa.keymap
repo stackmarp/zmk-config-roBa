@@ -73,7 +73,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
 &kp A             &kp S         &kp D         &kp F             &kp G        &lt 6 ESCAPE            &kp EQUAL      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z             &kp X         &kp C         &kp V             &kp B        &kp TAB                 &parenthesis   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp Z             &kp X         &kp C         &kp V             &kp B        &mt LEFT_SHIFT TAB      &parenthesis   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
@@ -102,11 +102,11 @@
             bindings = <
 &trans  &trans  &kp UP_ARROW  &trans  &trans                      &trans  &trans  &kp UP_ARROW  &trans  &trans
 &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &kp HOME  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT_ARROW))  &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT      &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
